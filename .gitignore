@@ -1,33 +1,23 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Sensitive API Keys & Config
 .env
-.env.*
-!.env.example
-.DS_Store
-__pycache__
-.idea
-KMS
-.venv
-.vscode
-*.egg-info
-.pytest_cache
-.ruff_cache
+.env.local
+*.env
 
-# Claude Code
-.claude/settings.local.json
-.claude/worktrees/
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
 
-# OpenAI Codex
-.codex/config.local.toml
-
-# Gemini CLI
-.gemini/history/
-.gemini/tmp/
-.gemini/google_accounts.json
-.gemini/installation_id
-.gemini/oauth_creds.json
-
-# Cursor
-.cursor/chat/
-.cursor/rules/*.local.mdc
-
-# GitHub CLI
-.github/personal-instructions.md
+# IDE files
+.vscode/
+.idea/
+build/
+dist/
+*.spec
+src/*.egg-info/
